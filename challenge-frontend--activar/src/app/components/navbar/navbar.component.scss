@@ -1,6 +1,20 @@
-@use '../../module-sass/clearfix';
-
+@use "../../module-sass/clearfix";
 $block-d: block;
+
+@keyframes latir {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.02, 1.02);
+  }
+  55% {
+    transform: scale(0.95, 0.95);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
 
 #header {
   height: 120px;
@@ -25,20 +39,6 @@ $block-d: block;
     margin-top: -9px;
     margin-right: 10px;
     animation: latir infinite 3s linear;
-  }
-  @keyframes latir {
-    0% {
-      transform: scale(1, 1);
-    }
-    50% {
-      transform: scale(1.02, 1.02);
-    }
-    55% {
-      transform: scale(0.95, 0.95);
-    }
-    100% {
-      transform: scale(1, 1);
-    }
   }
   #brand {
     display: $block-d;

@@ -19,12 +19,13 @@ import { FilterPipe } from './pipes/filter.pipe';
     CharactersComponent,
     LoaderComponent,
     NavbarComponent,
-    FilterPipe
+    FilterPipe,
+
   ],
   imports: [
     BrowserModule,
     routing,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
