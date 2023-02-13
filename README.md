@@ -22,6 +22,8 @@
     ✅ Searchbar para que el usuario pueda buscar sus favoritos entre los personajes que se reciben de la API.
 
     ✅ Paginado para que pueda tener una interacción con la página y para que no reciba de golpe los 82 personajes que se pueden recibir de la API.
+    
+    ✅ La misma cuenta con responsive web desing adaptado a todo tipo de pantalla (me gusto mucho más como quedo la versión mobile que la desktop).
 
 ## Tecnologias utilizadas 💻
 
