@@ -1,0 +1,29 @@
+@use '../../module-sass/clearfix';
+
+$max-width: 100%;
+$max-padding: 20px;
+$d-block: block;
+$extent-min: 1px;
+
+.article-item{
+    width: $max-width;
+    border-bottom: $extent-min solid #eee;
+    padding-top: $max-padding;
+    padding-bottom: $max-padding;
+    text-align: center;
+
+    h2{
+        display: $d-block;
+        width: $max-width;
+        padding: $extent-min;
+        margin: $extent-min;
+        margin-bottom: 7px;
+        color: white
+    }
+
+    .sub-info{
+        display: $d-block;
+        width: $max-width;
+        color: rgb(122,122,122)
+    }
+}

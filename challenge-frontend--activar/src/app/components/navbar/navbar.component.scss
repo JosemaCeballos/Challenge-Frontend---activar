@@ -1,0 +1,83 @@
+@use '../../module-sass/clearfix';
+
+$block-d: block;
+
+#header {
+  height: 120px;
+  width: 100%;
+  border-bottom: 1px solid transparent;
+  border-top: 5px solid #05f29b;
+
+  .center {
+    width: 80%;
+    margin: 0px auto;
+  }
+  #logo {
+    width: 30%;
+    font-size: 30px;
+    float: left;
+    margin-top: 35px;
+  }
+  img {
+    display: $block-d;
+    float: left;
+    height: 60px;
+    margin-top: -9px;
+    margin-right: 10px;
+    animation: latir infinite 3s linear;
+  }
+  @keyframes latir {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.02, 1.02);
+    }
+    55% {
+      transform: scale(0.95, 0.95);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  #brand {
+    display: $block-d;
+    margin: 0px;
+    float: left;
+    color: white;
+  }
+  @media (max-width: 1488px) {
+    .center {
+      width: 85%;
+    }
+  }
+  @media (max-width: 1314px) {
+    .center {
+      width: 95%;
+    }
+  }
+}
+@media (max-width: 881px) {
+  #header {
+    min-height: 150px;
+
+    .center {
+      #logo {
+        width: 265px;
+      }
+    }
+  }
+}
+@media (max-width: 813px) {
+  #logo {
+    float: none;
+    margin: 0px auto;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 487px) {
+  #header {
+    min-height: 150px;
+    overflow: hidden;
+  }
+}

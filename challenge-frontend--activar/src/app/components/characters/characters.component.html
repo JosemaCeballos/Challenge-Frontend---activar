@@ -1,0 +1,41 @@
+<input
+  type="text"
+  placeholder="Search character"
+  #searched
+  (keyup)="onSearch(searched.value)"
+/>
+
+<ng-container *ngIf="characters.length > 80">
+  <div class="center">
+    <section id="content">
+      <div class="button-container">
+        <button class="prev-next" (click)="prevPage()">< Prev</button>
+        &nbsp;
+        <button
+          (click)="nextPage()"
+          class="prev-next"
+          [disabled]="(characters | filter : page : search).length === 0"
+        >
+          Next >
+        </button>
+      </div>
+
+      <ng-container
+        *ngFor="let character of characters | filter : page : search"
+      >
+        <app-character-card [characters]="character"></app-character-card>
+      </ng-container>
+
+      <h1
+        *ngIf="(characters | filter : page : search).length === 0"
+        class="notfound-msg"
+      >
+        No more characters found with name: {{ search }}
+      </h1>
+    </section>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="!characters.length">
+  <app-loader></app-loader>
+</ng-container>

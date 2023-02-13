@@ -1,0 +1,75 @@
+$color-principal: white;
+$max-width: 100%;
+
+input[type="text"] {
+  width: $max-width;
+  box-sizing: border-box;
+  border: 2px solid $color-principal;
+  border-radius: 4px;
+  font-size: 16px;
+  background-image: url("../../../assets/searchicon.png");
+  background-position: 12px 12px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  text-align: center;
+}
+
+.center {
+  width: $max-width;
+  margin: 0px auto;
+
+  #content {
+    width: $max-width;
+    float: left;
+    min-height: 650px;
+    margin-right: 20px;
+
+    .button-container{
+      padding-top: 20px;
+      margin: 0px auto;
+      width: $max-width;
+      text-align: center;
+
+      .prev-next {
+        border-radius: 10%;
+        background-color: #05f29b;
+        color: $color-principal;
+        padding: 20px;
+        cursor: pointer;
+      }
+    }
+    }
+    .notfound-msg{
+      color: $color-principal;
+      text-align: center
+    }
+  }
+  @media (max-width: 813px) {
+    input[type="text"]{
+      width: $max-width;
+    }
+
+    #content {
+      float: none;
+      width: $max-width;
+    }
+  }
+
+
+@media (max-width: 1488px) {
+  input[type="text"]{
+      width: $max-width;
+  }
+
+  .center {
+    width: $max-width;
+  }
+}
+@media (max-width: 1314px) {
+  input[type="text"]{
+    width: $max-width;
+  }
+  .center {
+    width: $max-width;
+  }
+}
