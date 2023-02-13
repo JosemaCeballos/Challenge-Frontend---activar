@@ -87,5 +87,9 @@ El botón de next va a contar con el disaled en caso de que de characters pasado
 
 ✅ Por último solo un loader para que el usuario no vea la pantalla en blanco mientras se cargan los pedidos a la API.
 
+<p align="left">
+  <img height="500" src="./img-readme/characterhtml.png" />
+</p>
+
 
 # Espero lo disfruten y mi challenge sea de vuestro agrado, muchas gracias por la oportunidad... 😉
